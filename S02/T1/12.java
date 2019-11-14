@@ -7,8 +7,8 @@ class test12 {
 
     public static void main(String[] args) {
         int[] a = new int[5];
-        System.out.println("Введите массив из 10-ти чисел");
-        for (int i = 1; i < 5; i++)
+        System.out.println("Введите массив из 5-ти чисел");
+        for (int i = 0; i < 5; i++)
             a[i] = requestNumber();
         Digit(a);
         }
@@ -16,7 +16,7 @@ class test12 {
 
     private static int Digit(int a[]) {
         int r = 0;
-        for (int k = 1; k < 5; k++)
+        for (int k = 0; k < 5; k++)
             r = r + a[k];
         if (String.valueOf(r).length() > 1)
             System.out.println("Число двухзначное");
