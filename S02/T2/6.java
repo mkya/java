@@ -7,13 +7,13 @@ class test6 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String a = new String();
-        String b = new String();
+        StringBuilder sb = new StringBuilder();
         System.out.println("Введите строку");
         a = sc.nextLine();
 
-        if (a.length() % 2 == 0)
-            b = a.substring(a.length() / 2) + b.concat(a.substring(0, a.length() / 2));
-
-        System.out.println(b);
+        if (a.length() % 2 == 0) {
+            sb.append(a.substring(a.length() / 2));
+            System.out.print(sb.append(a.substring(0, a.length() / 2)));
+        }
     }
 }
